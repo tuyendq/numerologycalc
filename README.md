@@ -1,0 +1,2 @@
+# numerologycalc
+A JavaScript project
