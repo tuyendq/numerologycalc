@@ -45,7 +45,7 @@ function moduloNumber(x, modulo) {
  */
 function nameToInteger(name="  LE DO QUYNH HUONG  ") {
   let result = [];
-  strName = name.trim().toLowerCase();
+  let strName = name.trim().toLowerCase();
   for (let i = 0; i < strName.length; i++) {
     let position = alphabet.indexOf(strName[i]);
     if (position != -1) {
@@ -56,3 +56,8 @@ function nameToInteger(name="  LE DO QUYNH HUONG  ") {
   // console.log(result);
   return output;
 }
+
+module.exports = {
+  moduloNumber: moduloNumber,
+  nameToInteger: nameToInteger,
+};
